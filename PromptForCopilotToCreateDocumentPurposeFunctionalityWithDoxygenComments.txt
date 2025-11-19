@@ -1,0 +1,64 @@
+To get code documentation for Purpose & Functionality + methods commented with doxygen comments:
+
+ 
+
+1-Use agent mode of copilot
+
+2-Change the model from GPT 4.1 to Claude Sonnet 4
+
+3- Use this prompt:
+
+Explain the complete purpose and functionality in detail of the code in walgreensserver.pl and walgreensserverlibrary.pl and add to a markdown document named PurposeAndFunctionality.md.  Also add Doxygen-style docstrings to every function and method, describing their purpose, parameters, return values, and exception conditions for walgreensserver.pl and walgreensserverlibrary.pl and update the source files.  Add inline comments throughout the code to clarify logic, variable usage, and complex operations. Document the purpose of global/static variables where they are used. Apply this style to every function: add a Doxygen-style docstring at the top, and inline comments for complex logic or important variable usage. Document all parameters, return values, and any error/exception/exit conditions.
+
+ 
+
+Also change the "walgreensserver.pl and walgreensserverlibrary.pl" to the name(s) of your classes/code ....
+
+
+==================================
+
+The prompt that would produce this source documenation is : Forget everything you may have done or learned with this repository today. Do not attempt to build or compile any code, that is done on the CICD runner.
+Explain the complete purpose and functionality in detail of the code in all .cpp and .hpp files and add to a markdown document named PurposeAndFunctionality.md. Also add Doxygen-style docstrings to every function and method, describing their purpose, parameters, return values, and exception conditions for all .cpp and .hpp files and update the source files. Add inline comments throughout the code to clarify logic, variable usage, and complex operations. Document the purpose of global/static variables where they are used. Apply this style to every function: add a Doxygen-style docstring at the top, and inline comments for complex logic or important variable usage. Document all parameters, return values, and any error/exception/exit conditions. Ignore any file in the no.commit directory or where the name contains no.commit or is found in a no.commit folder. Continue until all files are documented, do not require any confirmations or ask if you should continue. Please only add documentation comments, do not modify any existing code, do not add any new functions or structures, keep all the original code exactly as it was.
+
+==================================
+
+# 2025-08-13
+Before you submit the prompt to copilot be sure to update the (2) occurrences of "<LIST OF SOURCE FILES>" in the prompt provided.
+ 
+- Forget everything you may have done or learned with this repository previously.  
+- Do not attempt to build or compile any code, that is done on the CICD runner.
+- Explain the complete purpose and functionality in detail of the code in <LIST OF SOURCE FILES> and add to a markdown document named PurposeAndFunctionality.md
+- Also add Doxygen-style docstrings to every function and method, describing their purpose, parameters, return values, and exception conditions for <LIST OF SOURCE FILES> and update the source files.
+- Add inline comments throughout the code to clarify logic, variable usage, and complex operations. Document the purpose of global/static variables where they are used.
+- Apply this style to every function: add a Doxygen-style docstring at the top, and inline comments for complex logic or important variable usage.
+- Document all parameters, return values, and any error/exception/exit conditions.
+- Continue until all files are documented, do not require any confirmations or ask if you should continue.
+- Only add documentation comments, do not modify any existing code, do not add any new functions or structures, keep all the original code exactly as it was.
+- Ignore any files not specifically enumerated in the list of files to comment.
+- When you have completed this work, please review everything to make sure that you have not introduced any syntax errors or changed any code.  
+- Finally check to make sure all code is commented and update any which has not been done before.
+
+==================================
+
+# 2025-09-08
+Before you submit the prompt to copilot be sure to update the (2) occurrences of "<LIST OF SOURCE FILES>" in the prompt provided.
+- Explain the complete purpose and functionality in detail of the code in below file list and add to a markdown document named PurposeAndFunctionality.md
+ 
+- Forget everything you may have done or learned with this repository previously.  
+- Do not attempt to build or compile any code, that is done on the CICD runner.
+- Do not attempt to remove or delete any existing commented out code/comments.
+- Add Doxygen-style docstrings to every function and method, describing their purpose, parameters, return values, and exception conditions for below file list and update the source files.
+- Add inline comments throughout the code to clarify logic, variable usage, and complex operations. Document the purpose of global/static variables where they are used. Do not modify the existing comments, only append the update comment to existing comment.
+- Apply this style to every function: add a Doxygen-style docstring at the top, and inline comments for complex logic or important variable usage.
+- Document all parameters, return values, and any error/exception/exit conditions.
+- Continue until all files are documented, do not require any confirmations or ask if you should continue.
+- Only add documentation comments, do not modify any existing code, do not add any new functions or structures, keep all the original code exactly as it was. Do not remove or delete any existing commented out code/comments.
+- When adding new comments, only append the new/update comment to existing comment, do not modify the existing comments.
+- Ignore any files not specifically enumerated in the list of files to comment.
+
+file list:
+usmcawhipaa.cpp
+usmcawhipaa.h
+usmcawdbd.h
+
+
